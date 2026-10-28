@@ -10,7 +10,7 @@ pipeline{
         stage("Version Control"){
             steps{
                 echo "these are the versions"
-                bat "git logs --online"
+                bat "git log --oneline"
             }
         }
     }
